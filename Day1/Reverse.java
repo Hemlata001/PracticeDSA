@@ -16,3 +16,5 @@ public class Reverse {
         System.out.println("Before reversing: " + Arrays.toString(arr));
     }
 }
+// Time Complexity : O(n)
+// Space Complexity : O(n)
