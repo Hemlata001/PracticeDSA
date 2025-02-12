@@ -29,4 +29,4 @@ public class MinMax {
     }
 }
 // Time complexity : O(n)
-// Space Complexity : O(n)
+// Space Complexity : O(1)
