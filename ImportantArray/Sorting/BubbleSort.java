@@ -35,3 +35,8 @@ public class BubbleSort
 
 // Time Complexity : O(n^2)
 // Space Complexity : O(1)
+
+// (n-1) + (n-2) + (n-3) + ------+1
+// sum of natural number = n(n+1)/2
+// for (n-1)---- (n-1)(n-1+1)/2  = n^2
+// Bubble Sort is stable and inplace algo.
