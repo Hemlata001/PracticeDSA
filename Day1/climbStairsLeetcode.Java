@@ -6,3 +6,5 @@ class Solution {
         return climbStairs(n-1) + climbStairs(n-2);
     }
 }
+//  Time complexity: O(2^n)
+// Space complexity: O(n) (due to function call stack)
