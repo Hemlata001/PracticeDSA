@@ -32,6 +32,13 @@ public class Insertion {
         temp.next = newNode;
     }
 
+    // Method to insert at the beginning
+    public void insertAtBeigninig(int newData){
+        Node newNode = new Node(newData);
+        newNode.next = head;
+        head = newNode;
+    }     //O(n)
+
     // Method to display the linked list
     public void displayll() {
         Node temp = head;
@@ -56,6 +63,19 @@ public class Insertion {
         System.out.println("After insertion of 10:");
         llist.displayll();
         System.out.println();
+
+        System.out.println("Before insertion of 8:");
+        llist.displayll();
+        System.out.println();
+
+        llist.insertAtBeigninig(8);
+        System.out.println("After insertion of 8:");
+        llist.displayll();
+        System.out.println();
+
+
+
+
     }
 }
 
