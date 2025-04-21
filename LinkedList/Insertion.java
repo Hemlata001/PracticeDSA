@@ -39,6 +39,17 @@ public class Insertion {
         head = newNode;
     }     //O(n)
 
+
+    //Method insertion of a node after any node.
+    public void insertAfter(Node prev_node, int newData){
+        if(prev_node == null){
+            System.out.println("The previous node cannot contain null values");
+            return;
+        }
+        Node newNode = new Node(newData);
+        newNode.next = prev_node.next;
+        prev_node.next = newNode;
+    }
     // Method to display the linked list
     public void displayll() {
         Node temp = head;
@@ -73,8 +84,14 @@ public class Insertion {
         llist.displayll();
         System.out.println();
 
+        System.out.println("Before insertion of 12:");
+        llist.displayll();
+        System.out.println();
 
-
+        llist.insertAfter(llist.head.next.next,12);
+        System.out.println("After insertion of 12:");
+        llist.displayll();
+        System.out.println();
 
     }
 }
